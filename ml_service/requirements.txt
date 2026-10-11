@@ -1,0 +1,27 @@
+# ============================================================
+# CyberShield AI — ML Microservice Requirements
+# Python 3.11 | CPU-only build
+# Last updated: 2026-09-18
+# ============================================================
+
+# --- Web Framework ---
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-multipart==0.0.12
+pydantic==2.10.0
+pydantic-settings==2.6.0
+
+# --- Deep Learning (CPU) ---
+torch==2.4.1
+torchvision==0.19.1
+torchaudio==2.4.1
+
+# --- Image / Audio Processing ---
+pillow==10.4.0
+librosa==0.10.2
+soundfile==0.12.1
+numpy==1.26.4
+
+# --- Utilities ---
+python-dotenv==1.0.1
+tqdm==4.66.5

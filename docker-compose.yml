@@ -1,0 +1,56 @@
+services:
+  backend:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+      - ./backend/media:/app/media
+    environment:
+      - DJANGO_DEBUG=1
+      - DJANGO_ALLOWED_HOSTS=*
+      - ML_SERVICE_URL=http://ml_service:8001
+      - ALERT_SERVER_URL=http://alert_server:4001
+      - ALERT_WS_URL=ws://localhost:4000
+      - MEDIA_ROOT=/app/media
+      - CORS_ALLOW_ALL_ORIGINS=1
+    command: bash -lc "pip install -r requirements.txt && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - ml_service
+      - alert_server
+
+  ml_service:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ./ml_service:/app
+    command: bash -lc "pip install -r requirements.txt && uvicorn main:app --host 0.0.0.0 --port 8001"
+    ports:
+      - "8001:8001"
+
+  alert_server:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ./alert_server:/app
+    command: bash -lc "pip install -r requirements.txt && python server.py"
+    ports:
+      - "4000:4000"   # ws:// used directly by src/services/socket.js
+      - "4001:4001"   # internal HTTP publish channel used by Django
+
+  frontend:
+    image: node:20-slim
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    environment:
+      - REACT_APP_API_BASE_URL=http://localhost:8000
+      - REACT_APP_ALERT_WS_URL=ws://localhost:4000
+      - CI=true
+      - WDS_SOCKET_PORT=0
+    command: bash -lc "npm install && npm start"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend

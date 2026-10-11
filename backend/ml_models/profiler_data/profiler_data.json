@@ -1,0 +1,488 @@
+{
+  "profiles": {
+    "user123_whatsapp": {
+      "contact_id": "user123",
+      "platform": "whatsapp",
+      "first_seen": "2026-08-31 11:55:46.317377",
+      "last_seen": "2026-08-31 11:55:56.416133",
+      "total_messages": 2,
+      "intent_counts": {
+        "Safe": 1,
+        "Harassment": 1
+      },
+      "average_severity": 0.988,
+      "severity_trend": "stable",
+      "escalation_status": false,
+      "recent_alerts": []
+    },
+    "whatsapp_923001234567_whatsapp": {
+      "contact_id": "whatsapp_923001234567",
+      "platform": "whatsapp",
+      "first_seen": "2026-09-15 13:39:42.667244",
+      "last_seen": "2026-09-15 14:53:52.355035",
+      "total_messages": 3,
+      "intent_counts": {
+        "Harassment": 2,
+        "Fraud": 1
+      },
+      "average_severity": 0.979,
+      "severity_trend": "stable",
+      "escalation_status": false,
+      "recent_alerts": []
+    },
+    "instagram_9876543210_instagram": {
+      "contact_id": "instagram_9876543210",
+      "platform": "instagram",
+      "first_seen": "2026-09-17 11:32:25.800165",
+      "last_seen": "2026-09-17 11:34:30.753011",
+      "total_messages": 2,
+      "intent_counts": {
+        "Harassment": 1,
+        "Safe": 1
+      },
+      "average_severity": 0.99,
+      "severity_trend": "stable",
+      "escalation_status": false,
+      "recent_alerts": []
+    },
+    "instagram_1593123408953833_instagram": {
+      "contact_id": "instagram_1593123408953833",
+      "platform": "instagram",
+      "first_seen": "2026-09-17 12:29:40.603946",
+      "last_seen": "2026-09-24 15:49:56.600435",
+      "total_messages": 22,
+      "intent_counts": {
+        "Safe": 12,
+        "Harassment": 9,
+        "Fraud": 1
+      },
+      "average_severity": 0.98,
+      "severity_trend": "stable",
+      "escalation_status": false,
+      "recent_alerts": []
+    },
+    "instagram_17841415322826626_instagram": {
+      "contact_id": "instagram_17841415322826626",
+      "platform": "instagram",
+      "first_seen": "2026-09-17 12:29:40.603946",
+      "last_seen": "2026-09-24 15:50:43.702973",
+      "total_messages": 23,
+      "intent_counts": {
+        "Safe": 12,
+        "Harassment": 10,
+        "Fraud": 1
+      },
+      "average_severity": 0.981,
+      "severity_trend": "stable",
+      "escalation_status": false,
+      "recent_alerts": []
+    },
+    "instagram_1747391443167081_instagram": {
+      "contact_id": "instagram_1747391443167081",
+      "platform": "instagram",
+      "first_seen": "2026-09-17 12:34:04.953316",
+      "last_seen": "2026-09-17 12:35:39.910156",
+      "total_messages": 2,
+      "intent_counts": {
+        "Safe": 2
+      },
+      "average_severity": 0.965,
+      "severity_trend": "stable",
+      "escalation_status": false,
+      "recent_alerts": []
+    }
+  },
+  "message_history": {
+    "user123_whatsapp": [
+      {
+        "text": "Kya haal hai?",
+        "intent": "Safe",
+        "severity_score": 0.9779027104377747,
+        "timestamp": "2026-08-31 11:55:46.317377",
+        "platform": "whatsapp"
+      },
+      {
+        "text": "Tum bohot ghatiya ho.",
+        "intent": "Harassment",
+        "severity_score": 0.9971029162406921,
+        "timestamp": "2026-08-31 11:55:56.416133",
+        "platform": "whatsapp"
+      }
+    ],
+    "whatsapp_923001234567_whatsapp": [
+      {
+        "text": "Tum bohot ghatiya ho.",
+        "intent": "Harassment",
+        "severity_score": 0.9971029162406921,
+        "timestamp": "2026-09-15 13:39:42.667244",
+        "platform": "whatsapp"
+      },
+      {
+        "text": "Tum bohot ghatiya ho.",
+        "intent": "Harassment",
+        "severity_score": 0.9971029162406921,
+        "timestamp": "2026-09-15 14:11:23.666046",
+        "platform": "whatsapp"
+      },
+      {
+        "text": "Test from ngrok.",
+        "intent": "Fraud",
+        "severity_score": 0.9437921643257141,
+        "timestamp": "2026-09-15 14:53:52.355035",
+        "platform": "whatsapp"
+      }
+    ],
+    "instagram_9876543210_instagram": [
+      {
+        "text": "Tum bohot ghatiya ho. Paise do warna bura hoga.",
+        "intent": "Harassment",
+        "severity_score": 0.9960160851478577,
+        "timestamp": "2026-09-17 11:32:25.800165",
+        "platform": "instagram"
+      },
+      {
+        "text": "Kya haal hai? Aaj kal kya kar rahe ho?",
+        "intent": "Safe",
+        "severity_score": 0.9845080375671387,
+        "timestamp": "2026-09-17 11:34:30.753011",
+        "platform": "instagram"
+      }
+    ],
+    "instagram_1593123408953833_instagram": [
+      {
+        "text": "hiii rubina",
+        "intent": "Safe",
+        "severity_score": 0.9887634515762329,
+        "timestamp": "2026-09-17 12:29:40.603946",
+        "platform": "instagram"
+      },
+      {
+        "text": "kia kr rhi ho",
+        "intent": "Safe",
+        "severity_score": 0.9942281246185303,
+        "timestamp": "2026-09-17 12:30:07.582252",
+        "platform": "instagram"
+      },
+      {
+        "text": "ma tm si bt kr rha hon ar thmry hai  k nhkry e nhi khtm ho ry",
+        "intent": "Safe",
+        "severity_score": 0.9941518902778625,
+        "timestamp": "2026-09-17 12:30:31.637305",
+        "platform": "instagram"
+      },
+      {
+        "text": "bt kro mujh sse wrna mujh si bohra koi ni ho ga thmri sari private pic leak kr donga",
+        "intent": "Safe",
+        "severity_score": 0.9941199421882629,
+        "timestamp": "2026-09-17 12:31:10.571275",
+        "platform": "instagram"
+      },
+      {
+        "text": "ghtyia ladki",
+        "intent": "Harassment",
+        "severity_score": 0.9884005784988403,
+        "timestamp": "2026-09-17 12:31:36.211499",
+        "platform": "instagram"
+      },
+      {
+        "text": "moti bhains aurt",
+        "intent": "Safe",
+        "severity_score": 0.9932975172996521,
+        "timestamp": "2026-09-17 12:31:59.460961",
+        "platform": "instagram"
+      },
+      {
+        "text": "kamini",
+        "intent": "Harassment",
+        "severity_score": 0.9925568103790283,
+        "timestamp": "2026-09-17 12:32:34.354337",
+        "platform": "instagram"
+      },
+      {
+        "text": "gndi ladki",
+        "intent": "Harassment",
+        "severity_score": 0.9876078963279724,
+        "timestamp": "2026-09-17 12:32:58.253800",
+        "platform": "instagram"
+      },
+      {
+        "text": "pyri ladki",
+        "intent": "Safe",
+        "severity_score": 0.9021371603012085,
+        "timestamp": "2026-09-17 12:33:47.893743",
+        "platform": "instagram"
+      },
+      {
+        "text": "i will kill yuo",
+        "intent": "Safe",
+        "severity_score": 0.9936376214027405,
+        "timestamp": "2026-09-17 12:43:22.838396",
+        "platform": "instagram"
+      },
+      {
+        "text": "kamini",
+        "intent": "Harassment",
+        "severity_score": 0.9925568103790283,
+        "timestamp": "2026-09-17 12:43:47.087822",
+        "platform": "instagram"
+      },
+      {
+        "text": "Apko 1000 rupees ka Jazz load mila hai. Apna number confirm karen.",
+        "intent": "Fraud",
+        "severity_score": 0.9987008571624756,
+        "timestamp": "2026-09-20 16:24:31.620351",
+        "platform": "instagram"
+      },
+      {
+        "text": "gndi ladki",
+        "intent": "Harassment",
+        "severity_score": 0.9876078963279724,
+        "timestamp": "2026-09-22 21:18:55.194918",
+        "platform": "instagram"
+      },
+      {
+        "text": "[image attachment]",
+        "intent": "Safe",
+        "severity_score": 0.8561437726020813,
+        "timestamp": "2026-09-22 21:20:50.571418",
+        "platform": "instagram"
+      },
+      {
+        "text": "bht e ghtyia ho tm",
+        "intent": "Safe",
+        "severity_score": 0.9875112771987915,
+        "timestamp": "2026-09-24 15:25:23.697763",
+        "platform": "instagram"
+      },
+      {
+        "text": "bht e bohri ladki ho tm",
+        "intent": "Safe",
+        "severity_score": 0.9903967380523682,
+        "timestamp": "2026-09-24 15:25:29.218265",
+        "platform": "instagram"
+      },
+      {
+        "text": "gndi ladki",
+        "intent": "Harassment",
+        "severity_score": 0.9876078963279724,
+        "timestamp": "2026-09-24 15:37:22.105701",
+        "platform": "instagram"
+      },
+      {
+        "text": "kia tm sex ma interested ho",
+        "intent": "Safe",
+        "severity_score": 0.994661271572113,
+        "timestamp": "2026-09-24 15:37:48.910289",
+        "platform": "instagram"
+      },
+      {
+        "text": "Apni tasveer bhejo warna expose kar dunga",
+        "intent": "Safe",
+        "severity_score": 0.9848119020462036,
+        "timestamp": "2026-09-24 15:40:11.579642",
+        "platform": "instagram"
+      },
+      {
+        "text": "gnndi ladki",
+        "intent": "Harassment",
+        "severity_score": 0.9848157167434692,
+        "timestamp": "2026-09-24 15:40:59.874262",
+        "platform": "instagram"
+      },
+      {
+        "text": "Tum bohot ghatiya ho, maar dunga",
+        "intent": "Harassment",
+        "severity_score": 0.9973304271697998,
+        "timestamp": "2026-09-24 15:41:39.408749",
+        "platform": "instagram"
+      },
+      {
+        "text": "khandan e ghtyia hai",
+        "intent": "Harassment",
+        "severity_score": 0.97550368309021,
+        "timestamp": "2026-09-24 15:49:56.600435",
+        "platform": "instagram"
+      }
+    ],
+    "instagram_17841415322826626_instagram": [
+      {
+        "text": "hiii rubina",
+        "intent": "Safe",
+        "severity_score": 0.9887634515762329,
+        "timestamp": "2026-09-17 12:29:40.603946",
+        "platform": "instagram"
+      },
+      {
+        "text": "kia kr rhi ho",
+        "intent": "Safe",
+        "severity_score": 0.9942281246185303,
+        "timestamp": "2026-09-17 12:30:07.721159",
+        "platform": "instagram"
+      },
+      {
+        "text": "ma tm si bt kr rha hon ar thmry hai  k nhkry e nhi khtm ho ry",
+        "intent": "Safe",
+        "severity_score": 0.9941518902778625,
+        "timestamp": "2026-09-17 12:30:33.077906",
+        "platform": "instagram"
+      },
+      {
+        "text": "bt kro mujh sse wrna mujh si bohra koi ni ho ga thmri sari private pic leak kr donga",
+        "intent": "Safe",
+        "severity_score": 0.9941199421882629,
+        "timestamp": "2026-09-17 12:31:10.633099",
+        "platform": "instagram"
+      },
+      {
+        "text": "ghtyia ladki",
+        "intent": "Harassment",
+        "severity_score": 0.9884005784988403,
+        "timestamp": "2026-09-17 12:31:36.321867",
+        "platform": "instagram"
+      },
+      {
+        "text": "moti bhains aurt",
+        "intent": "Safe",
+        "severity_score": 0.9932975172996521,
+        "timestamp": "2026-09-17 12:31:59.577948",
+        "platform": "instagram"
+      },
+      {
+        "text": "kamini",
+        "intent": "Harassment",
+        "severity_score": 0.9925568103790283,
+        "timestamp": "2026-09-17 12:32:34.742875",
+        "platform": "instagram"
+      },
+      {
+        "text": "gndi ladki",
+        "intent": "Harassment",
+        "severity_score": 0.9876078963279724,
+        "timestamp": "2026-09-17 12:32:58.309581",
+        "platform": "instagram"
+      },
+      {
+        "text": "pyri ladki",
+        "intent": "Safe",
+        "severity_score": 0.9021371603012085,
+        "timestamp": "2026-09-17 12:33:47.977631",
+        "platform": "instagram"
+      },
+      {
+        "text": "i will kill yuo",
+        "intent": "Safe",
+        "severity_score": 0.9936376214027405,
+        "timestamp": "2026-09-17 12:43:22.905292",
+        "platform": "instagram"
+      },
+      {
+        "text": "kamini",
+        "intent": "Harassment",
+        "severity_score": 0.9925568103790283,
+        "timestamp": "2026-09-17 12:43:47.279772",
+        "platform": "instagram"
+      },
+      {
+        "text": "Apko 1000 rupees ka Jazz load mila hai. Apna number confirm karen.",
+        "intent": "Fraud",
+        "severity_score": 0.9987008571624756,
+        "timestamp": "2026-09-20 16:24:31.621350",
+        "platform": "instagram"
+      },
+      {
+        "text": "gndi ladki",
+        "intent": "Harassment",
+        "severity_score": 0.9876078963279724,
+        "timestamp": "2026-09-22 21:18:55.195002",
+        "platform": "instagram"
+      },
+      {
+        "text": "[image attachment]",
+        "intent": "Safe",
+        "severity_score": 0.8561437726020813,
+        "timestamp": "2026-09-22 21:20:51.975131",
+        "platform": "instagram"
+      },
+      {
+        "text": "bht e ghtyia ho tm",
+        "intent": "Safe",
+        "severity_score": 0.9875112771987915,
+        "timestamp": "2026-09-24 15:25:13.956652",
+        "platform": "instagram"
+      },
+      {
+        "text": "bht e bohri ladki ho tm",
+        "intent": "Safe",
+        "severity_score": 0.9903967380523682,
+        "timestamp": "2026-09-24 15:25:29.432624",
+        "platform": "instagram"
+      },
+      {
+        "text": "gndi ladki",
+        "intent": "Harassment",
+        "severity_score": 0.9876078963279724,
+        "timestamp": "2026-09-24 15:37:22.240847",
+        "platform": "instagram"
+      },
+      {
+        "text": "kia tm sex ma interested ho",
+        "intent": "Safe",
+        "severity_score": 0.994661271572113,
+        "timestamp": "2026-09-24 15:37:49.042853",
+        "platform": "instagram"
+      },
+      {
+        "text": "Apni tasveer bhejo warna expose kar dunga",
+        "intent": "Safe",
+        "severity_score": 0.9848119020462036,
+        "timestamp": "2026-09-24 15:40:11.628626",
+        "platform": "instagram"
+      },
+      {
+        "text": "gnndi ladki",
+        "intent": "Harassment",
+        "severity_score": 0.9848157167434692,
+        "timestamp": "2026-09-24 15:41:00.019959",
+        "platform": "instagram"
+      },
+      {
+        "text": "Tum bohot ghatiya ho, maar dunga",
+        "intent": "Harassment",
+        "severity_score": 0.9973304271697998,
+        "timestamp": "2026-09-24 15:41:39.407751",
+        "platform": "instagram"
+      },
+      {
+        "text": "khandan e ghtyia hai",
+        "intent": "Harassment",
+        "severity_score": 0.97550368309021,
+        "timestamp": "2026-09-24 15:49:57.235340",
+        "platform": "instagram"
+      },
+      {
+        "text": "gndi ladki",
+        "intent": "Harassment",
+        "severity_score": 0.9876078963279724,
+        "timestamp": "2026-09-24 15:50:43.702973",
+        "platform": "instagram"
+      }
+    ],
+    "instagram_1747391443167081_instagram": [
+      {
+        "text": "Aslamalikum",
+        "intent": "Safe",
+        "severity_score": 0.9373565316200256,
+        "timestamp": "2026-09-17 12:34:04.953316",
+        "platform": "instagram"
+      },
+      {
+        "text": "Hello friend how are you \ud83d\ude0a",
+        "intent": "Safe",
+        "severity_score": 0.9921731948852539,
+        "timestamp": "2026-09-17 12:35:39.910156",
+        "platform": "instagram"
+      }
+    ]
+  },
+  "alerts": {}
+}
